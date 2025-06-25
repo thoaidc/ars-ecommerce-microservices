@@ -1,0 +1,36 @@
+name: Daily Submodule Update
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Automatically runs once every 6 hours starting at 0:00 UTC (~1am VN)
+  workflow_dispatch:      # Allow manual execution
+
+jobs:
+  update-submodules:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo with submodules   # Clone repository to execute the following steps
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set Git identity
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+
+      - name: Update submodules
+        run: |
+          git submodule update --remote --merge
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet && git ls-files --others --exclude-standard | wc -l | grep -q '^0$'; then
+            echo "No changes in submodules or new files."
+          else
+            git add .
+            git commit -m "[BOT] - Update submodules"
+            git push
+          fi
