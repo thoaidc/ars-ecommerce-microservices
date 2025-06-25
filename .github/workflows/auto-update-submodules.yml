@@ -23,7 +23,7 @@ jobs:
 
       - name: Update submodules
         run: |
-          git submodule update --remote --merge
+          git submodule update --force --remote
 
       - name: Commit and push if changed
         run: |

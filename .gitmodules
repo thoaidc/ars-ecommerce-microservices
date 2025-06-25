@@ -1,12 +1,16 @@
 [submodule "ars-api-gateway"]
 	path = ars-api-gateway
 	url = https://github.com/thoaidc/ars-api-gateway.git
+	branch = main
 [submodule "ars-auth-service"]
 	path = ars-auth-service
 	url = https://github.com/thoaidc/ars-auth-service.git
+	branch = main
 [submodule "service-discovery"]
 	path = service-discovery
 	url = https://github.com/thoaidc/service-discovery.git
+	branch = main
 [submodule "dct-base-starter"]
 	path = dct-base-starter
 	url = https://github.com/thoaidc/dct-base-starter.git
+	branch = main
