@@ -10,11 +10,15 @@
 	path = service-discovery
 	url = https://github.com/thoaidc/service-discovery.git
 	branch = main
-[submodule "dct-base-starter"]
-	path = dct-base-starter
-	url = https://github.com/thoaidc/dct-base-starter.git
+[submodule "dct-starter-model"]
+	path = dct-starter-model
+	url = https://github.com/thoaidc/dct-starter-model.git
 	branch = main
-[submodule "dct-base-model"]
-	path = dct-base-model
-	url = https://github.com/thoaidc/dct-base-model.git
+[submodule "dct-starter-config"]
+	path = dct-starter-config
+	url = https://github.com/thoaidc/dct-starter-config.git
+	branch = main
+[submodule "dct-starter-parent"]
+	path = dct-starter-parent
+	url = https://github.com/thoaidc/dct-starter-parent.git
 	branch = main
