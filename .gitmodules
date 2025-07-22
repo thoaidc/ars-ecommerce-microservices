@@ -22,3 +22,7 @@
 	path = dct-starter-parent
 	url = https://github.com/thoaidc/dct-starter-parent.git
 	branch = main
+[submodule "ars-config-server"]
+	path = ars-config-server
+	url = https://github.com/thoaidc/ars-config-server.git
+	branch = main
