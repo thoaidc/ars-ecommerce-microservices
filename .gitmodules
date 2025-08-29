@@ -26,3 +26,39 @@
 	path = ars-config-server
 	url = https://github.com/thoaidc/ars-config-server.git
 	branch = main
+[submodule "ars-admin-frontend"]
+	path = ars-admin-frontend
+	url = https://github.com/thoaidc/ars-admin-frontend.git
+    branch = main
+[submodule "ars-chat-service"]
+	path = ars-chat-service
+	url = https://github.com/thoaidc/ars-chat-service.git
+    branch = main
+[submodule "ars-admin-service"]
+	path = ars-admin-service
+	url = https://github.com/thoaidc/ars-admin-service.git
+    branch = main
+[submodule "ars-report-service"]
+	path = ars-report-service
+	url = https://github.com/thoaidc/ars-report-service.git
+	branch = main
+[submodule "ars-user-service"]
+	path = ars-user-service
+	url = https://github.com/thoaidc/ars-user-service.git
+	branch = main
+[submodule "ars-notification-service"]
+	path = ars-notification-service
+	url = https://github.com/thoaidc/ars-notification-service.git
+	branch = main
+[submodule "ars-payment-service"]
+	path = ars-payment-service
+	url = https://github.com/thoaidc/ars-payment-service.git
+	branch = main
+[submodule "ars-order-service"]
+	path = ars-order-service
+	url = https://github.com/thoaidc/ars-order-service.git
+	branch = main
+[submodule "ars-product-service"]
+	path = ars-product-service
+	url = https://github.com/thoaidc/ars-product-service.git
+	branch = main
