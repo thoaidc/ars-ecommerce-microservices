@@ -62,3 +62,7 @@
 	path = ars-product-service
 	url = https://github.com/thoaidc/ars-product-service.git
 	branch = main
+[submodule "ars-frontend"]
+	path = ars-frontend
+	url = https://github.com/thoaidc/ars-frontend.git
+	branch = main
