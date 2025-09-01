@@ -2,14 +2,6 @@
 	path = ars-api-gateway
 	url = https://github.com/thoaidc/ars-api-gateway.git
 	branch = main
-[submodule "ars-auth-service"]
-	path = ars-auth-service
-	url = https://github.com/thoaidc/ars-auth-service.git
-	branch = main
-[submodule "service-discovery"]
-	path = service-discovery
-	url = https://github.com/thoaidc/service-discovery.git
-	branch = main
 [submodule "dct-starter-model"]
 	path = dct-starter-model
 	url = https://github.com/thoaidc/dct-starter-model.git
@@ -33,10 +25,6 @@
 [submodule "ars-chat-service"]
 	path = ars-chat-service
 	url = https://github.com/thoaidc/ars-chat-service.git
-    branch = main
-[submodule "ars-admin-service"]
-	path = ars-admin-service
-	url = https://github.com/thoaidc/ars-admin-service.git
     branch = main
 [submodule "ars-report-service"]
 	path = ars-report-service
@@ -66,3 +54,6 @@
 	path = ars-frontend
 	url = https://github.com/thoaidc/ars-frontend.git
 	branch = main
+[submodule "discovery-server"]
+	path = discovery-server
+	url = https://github.com/thoaidc/discovery-server.git
