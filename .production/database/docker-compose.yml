@@ -1,0 +1,23 @@
+version: '3.9'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: ars-mysql-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-ars@Root123}
+      MYSQL_ROOT_HOST: "%"
+      TZ: Asia/Ho_Chi_Minh
+    ports:
+      - "3306:3306"
+    volumes:
+      - ${MYSQL_VOLUME:-/DATA_ARS/db}:/var/lib/mysql    # Mount volume DATABASE DATA
+      - ./scripts:/docker-entrypoint-initdb.d            # Scripts auto init schemas if not exists
+    command:
+      --default-authentication-plugin=caching_sha2_password
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${MYSQL_ROOT_PASSWORD:-ars@Root123}"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
