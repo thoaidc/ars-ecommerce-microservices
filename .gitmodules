@@ -50,10 +50,6 @@
 	path = ars-product-service
 	url = https://github.com/thoaidc/ars-product-service.git
 	branch = main
-[submodule "ars-frontend"]
-	path = ars-frontend
-	url = https://github.com/thoaidc/ars-frontend.git
-	branch = main
 [submodule "discovery-server"]
 	path = discovery-server
 	url = https://github.com/thoaidc/discovery-server.git
