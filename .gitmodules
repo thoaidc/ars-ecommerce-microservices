@@ -18,10 +18,6 @@
 	path = ars-config-server
 	url = https://github.com/thoaidc/ars-config-server.git
 	branch = main
-[submodule "ars-chat-service"]
-	path = ars-chat-service
-	url = https://github.com/thoaidc/ars-chat-service.git
-    branch = main
 [submodule "ars-report-service"]
 	path = ars-report-service
 	url = https://github.com/thoaidc/ars-report-service.git
@@ -52,3 +48,6 @@
 [submodule "ars-frontend"]
 	path = ars-frontend
 	url = https://github.com/thoaidc/ars-frontend.git
+[submodule "ars-admin-service"]
+	path = ars-admin-service
+	url = https://github.com/thoaidc/ars-admin-service.git
